@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot App</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container flex min-h-full justify-center ">
+        <div class="box shadow-md flex justify-between flex-col">
+
+            <div class="chatbox flex flex-row gap-2 shadow-md h-14 bg-gradient-to-r from-sky-500 to-indigo-500 justify-between">
+                <div class="nav1 flex">
+                    <img src="./IMG/chat.png" alt="" class="ml-1 mt-1">
+                    <h1 class="text-3xl font-mono font-semibold mt-2 text-slate-50">Chatting</h1>
+                </div>
+                <div class="nav2 flex justify-end items-end  ">
+                    <img src="./IMG/log-out.png" id="exit" alt="" class=" mb-3 mr-2 cursor-pointer">
+                </div>
+            </div>
+
+            <div class="message mt-2" id="displayMsg">
+                <!-- 
+                <label for="" class=" chat-outgoing flex gap-2 ml-2 py-2 w-64 items-end">
+                    <img src="./IMG/chatbot1.png" alt="" class="h-6 w-6">
+                    <ul class="w-60 shadow-lg rounded py-3">
+                        <li class="text-sm ml-2 text-slate-100">May i can you help you ?</li>
+                    </ul>
+                </label>
+                <br>
+                <label for="" id="searchValue" class="chat-incoming flex gap-2 justify-end mr-1 ml-30 items-end">
+                    <ul class="w-60 shadow-lg rounded py-3">
+                        <li class="text-sm ml-2 text-slate-400">Thank tou so much. </li>
+                    </ul>
+                    <img src="./IMG/i-am.png" class="h-6 w-6" alt="">
+                </label> -->
+
+            </div>
+
+            <div class="input flex  ml-2 mr-2 gap-2 justify-end ">
+                <div class="input1 flex w-screen hover:border-indigo-300  ">
+                    <img src="./IMG/in-love.png" class="emoji w-7 h-7 mt-1.5 mb-1 ml-1 cursor-pointer" id="emoji1" alt="">
+                    <img src="./IMG/cool.png" class="emoji w-7 h-7 mt-1.5 mb-1 ml-1 cursor-pointer" id="emoji2" alt="">
+                    <img src="./IMG/emoji.png" class="emoji w-7 h-7 mt-1.5 mb-1 ml-1 cursor-pointer" id="emoji3" alt="">
+                    <img src="./IMG/laugh.png" class="emoji w-7 h-7 mt-1.5 mb-1 ml-1 cursor-pointer" id="emoji4" alt="">
+                    <img src="./IMG/heart.png" class="emoji w-7 h-7 mt-1.5 mb-1 ml-1 cursor-pointer" id="emoji5" alt="">
+                    <img src="./IMG/happy.png" class="emoji w-7 h-7 mt-1.5 mb-1 ml-1 cursor-pointer" id="emoji6" alt="">
+                    <img src="./IMG/star.png" class="emoji w-7 h-7 mt-1.5 mb-1 ml-1 mr-1 cursor-pointer" id="emoji7" alt="">
+                </div>
+
+                <input id="message" class=" text-slate-100 w-full bg-transparent  placeholder:text-slate-400 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+                    placeholder="Type here..." />
+                <img src="./IMG/send-message.png" id="btn" alt="" class="h-6 w-6 mt-1.5 cursor-pointer">
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./chat.js"></script>
+</body>
+
+</html>

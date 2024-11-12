@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    /* border: 0.1px solid black; */
+    height: auto;
+    /* background-color: rgb(250, 250, 238); */
+}
+
+.container .box {
+    /* border: 0.1px solid red; */
+    height: 750px;
+    width: 450px;
+    border-radius: 10px;
+    /* overflow: scroll; */
+    overflow: hidden;
+    background: url("../IMG/Mobile Masthead_768x1000_AI Chatbots without Programming.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.container .box .chatbox .nav1 {
+    /* border: 0.1px solid black; */
+}
+
+.container .box .chatbox .nav2 {
+    /* border: 0.1px solid black; */
+}
+
+.message {
+    /* display: block; */
+    width: atuo;
+    overflow: auto;
+    height: 430px;
+    padding: 1em;
+    margin: 1em auto;
+    outline: 2px hidden cornflowerblue;
+}
+
+.container .box .message::-webkit-scrollbar {
+    display: none;
+}
+
+.message {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.container .box .message .chat-outgoing ul {
+    backdrop-filter: blur(400px);
+    background: transparent;
+    width: auto;
+}
+
+.container .box .message .chat-incoming ul {
+    backdrop-filter: blur(400px);
+    background: transparent;
+    width: auto;
+}
+
+.container .box .input .input1 {
+    border: 0.1px solid rgb(138, 134, 134);
+    /* height: 200px; */
+    /* border-radius: 50px; */
+    max-width: 40px;
+    overflow: auto;
+    gap: 5px;
+    /* padding: 0.5em; */
+    outline: 2px hidden cornflowerblue;
+    border-radius: 5px;
+    backdrop-filter: blur(100px);
+}
+
+.container .box .input .input1 #emoji {}
+
+.container .box .input .input1::-webkit-scrollbar {
+    display: none;
+}
+
+.input1 {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.container .input {
+    margin-bottom: 10px;
+}
